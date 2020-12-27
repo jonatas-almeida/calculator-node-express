@@ -6,12 +6,10 @@ Calculadora criada usando Node.js e Express para fins acadêmicos
 //Express -> npm install express (utlizada como framework do node para criar o servidor);
 
 //Body Parser -> npm install body-parser (utlizado para pegar os valores digitados no Form HTML, funcionando junto com a resquisição da função anônima do método post)
----------------------------------
 
 # Operadores Utilizados
 ----------------------------------
 //eval() -> Esse operador converte funções matemáticas que são trazidas como strings. Foi utilizado na saída da variável "result"
------------------------------------
 
 
 # Explicando os comandos utilizados
