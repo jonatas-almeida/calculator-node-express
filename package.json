@@ -1,0 +1,23 @@
+{
+  "name": "calculator-node-express",
+  "version": "1.0.0",
+  "description": "Calculadora cria usando Node e Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonatas-almeida/calculator-node-express.git"
+  },
+  "author": "Jonatas Almeida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonatas-almeida/calculator-node-express/issues"
+  },
+  "homepage": "https://github.com/jonatas-almeida/calculator-node-express#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
