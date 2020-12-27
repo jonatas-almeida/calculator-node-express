@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>BMI Calculator</title>
+
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        outline: none;
+        font-family: 'Segoe UI', sans-serif;
+      }
+
+      .bmi-calculator-container{
+        padding: 100px;
+      }
+
+      .bmi-calculator-container h1{
+        color: #87f;
+        margin-bottom: 20px;
+      }
+
+      .bmi-calculator-form{
+        width: 300px;
+        height: 400px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .bmi-calculator-form label{
+        font-weight: bold;
+        margin: 15px 0px;
+      }
+
+      .bmi-calculator-form input{
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        transition: all .3s;
+      }
+
+      .bmi-calculator-form input:focus{
+        transform: scale(1.1);
+        outline: 1px dashed #87f;
+      }
+
+      .btn-bmi-calculator{
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 12pt;
+        color: white;
+        background: #87f;
+        cursor: pointer;
+        margin-top: 50px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="bmi-calculator-container">
+      <form class="bmi-calculator-form" action="bmi-calculator" method="post">
+        <h1>Calculadora IMC</h1>
+        <a href="/">Calculadora normal</a>
+        <label for="">Weight:</label>
+        <input type="text" name="weightValue" placeholder="Weight">
+        <label for="">Height:</label>
+        <input type="text" name="heightValue" placeholder="Height">
+        <button class="btn-bmi-calculator" name="button">Calculate</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        outline: none;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+      }
+      html,
+      body{
+        width: 100%;
+        height: 100%;
+      }
+
+      body{
+        overflow: hidden;
+      }
+
+      .calculator-container{
+        padding: 100px;
+      }
+
+      .calculator-content{
+        width: 350px;
+        height: 500px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #fff;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .calculator-content h1{
+        color: #87f;
+      }
+
+      .calculator-form{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .calculator-form label{
+        font-weight: bold;
+        margin: 15px 0px;
+      }
+
+      .calculator-form input{
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        transition: all .3s;
+      }
+
+      .calculator-form input:focus{
+        transform: scale(1.1);
+        outline: 1px dashed #87f;
+      }
+
+      .btn-calculate{
+        margin-top: 60px;
+        padding: 15px;
+        font-size: 12pt;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background: #87f;
+        color: white;
+      }
+
+      .btn-calculate:active{
+        transform: scale(0.9);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="calculator-content">
+        <h1>Calculadora</h1>
+        <a href="/bmi-calculator">Calculadora IMC</a>
+        <form class="calculator-form" action="index.html" method="post">
+          <label for="firstValue">Primeiro valor:</label>
+          <input type="text" name="firstValue" placeholder="First">
+          <label for="operator">Operador:</label>
+          <input type="text" name="operator" placeholder="Operator">
+          <label for="secondValue">Segundo valor:</label>
+          <input type="text" name="secondValue" placeholder="Second">
+          <button type="submit" class="btn-calculate">Calcular</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
